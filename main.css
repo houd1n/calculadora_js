@@ -1,0 +1,26 @@
+.centro{
+  display: flex;
+  justify-content: center;
+}
+
+
+#result{
+  width: 8cm;
+  height: 1cm;
+  border: 1px solid black;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+
+.display-4{
+  text-align: center;
+}
+
+.btn-light, .btn-dark{
+  width: 2cm;
+  height: 2cm;
+}
+
+.btn-primary{
+  width: 8cm;
+}

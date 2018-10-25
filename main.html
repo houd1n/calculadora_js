@@ -1,0 +1,115 @@
+<html>
+<head>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <script src="main.js"></script>
+  <title>Calculadora</title>
+</head>
+<body>
+  <!--NAVBAR-->
+  <nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="./main.html"> <i class="fas fa-calculator fa-1x"></i> Calculadora</a>
+  </nav>
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Projeto: Calculadora</h1>
+    <p class="lead"></p>
+  </div>
+</div>
+
+<br>
+
+<div class="container-fluid">
+
+  <div class="row">
+    <div class="col-4"></div>
+    <div class="col-4">
+      <div class="centro">
+        <form class="calc" align="right">
+          <div id="result"> </div>
+
+            <div class="row">
+              <div class="col">
+                <div class="btn-toolbar" role="toolbar">
+                  <div class="btn-group btn-group-lg" role="group">
+                    <button type="button" class="btn btn-light" value="7" onClick="clickNum7()">7</button>
+                    <button type="button" class="btn btn-light" value="8" onclick="clickNum8()">8</button>
+                    <button type="button" class="btn btn-light" value="9" onclick="clickNum9()">9</button>
+                  </div>
+                  <div class="btn-group btn-group-lg" role="group">
+                    <button type="button" class="btn btn-dark" onClick="clickdiv()">/</button>     <!--Botão de Operação-->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <div class="btn-toolbar" role="toolbar">
+                  <div class="btn-group btn-group-lg" role="group">
+                    <button type="button" class="btn btn-light" value="4" onclick="clickNum4()">4</button>
+                    <button type="button" class="btn btn-light" value="5" onclick="clickNum5()">5</button>
+                    <button type="button" class="btn btn-light" value="6" onclick="clickNum6()">6</button>
+                  </div>
+                  <div class="btn-group btn-group-lg" role="group">
+                    <button type="button" class="btn btn-dark" onClick="clickmul()">*</button>       <!--Botão de Operação-->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <div class="btn-toolbar" role="toolbar">
+                  <div class="btn-group btn-group-lg" role="group">
+                    <button type="button" class="btn btn-light" value="1" onclick="clickNum1()">1</button>
+                    <button type="button" class="btn btn-light" value="2" onclick="clickNum2()">2</button>
+                    <button type="button" class="btn btn-light" value="3" onclick="clickNum3()">3</button>
+                  </div>
+                  <div class="btn-group btn-group-lg" role="group">
+                    <button type="button" class="btn btn-dark" onClick="clickmin()">-</button>      <!--Botão de Operação-->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <div class="btn-toolbar" role="toolbar">
+                  <div class="btn-group btn-group-lg" role="group">
+                    <button type="button" class="btn btn-light" onClick="clickC()">C</button>
+                    <button type="button" class="btn btn-light" value="0" onClick="clickNum0()">0</button>
+                    <button type="button" class="btn btn-light" onClick="clickdot()">.</button>
+                  </div>
+                  <div class="btn-group btn-group-lg" role="group">
+                    <button type="button" class="btn btn-dark" onClick="clickplus()">+</button>       <!--Botão de Operação-->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <div class="btn-toolbar" role="toolbar">
+                  <div class="btn-group btn-group-lg" role="group">
+                    <button type="button" class="btn btn-primary" onClick="clickequal()">=</button>     <!--Botão de Igual-->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </form>
+      </div>
+      <div class="col-4"></div>
+    </div>
+  </div>
+
+</body>
+</html>
