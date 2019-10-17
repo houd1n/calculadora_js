@@ -1,19 +1,41 @@
-.centro{
+body > h1 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #2c2c2c;
+  margin: 50px auto;
+}
+
+.center{
   display: flex;
   justify-content: center;
 }
 
-
-#result{
-  width: 8cm;
-  height: 1cm;
-  border: 1px solid black;
-  margin-bottom: 30px;
-  padding: 10px;
+.col-4{
+  text-align: center;
 }
 
-.display-4{
-  text-align: center;
+.numOpButtons {
+  border: 2px solid black
+}
+
+.visors {
+  justify-content: center;
+  margin: 10px auto;
+  width: 8cm;
+}
+
+.visorUp {
+  border: 1px solid black;
+  margin: 5px auto;
+  padding: 5px;
+  width: 100%;
+}
+
+.visorDown {
+  border: 1px solid black;
+  margin: 5px auto;
+  padding: 5px;
+  width: 100%;
 }
 
 .btn-light, .btn-dark{
@@ -22,5 +44,8 @@
 }
 
 .btn-primary{
-  width: 8cm;
+  width: 7.95cm;
+  border: 0;
+  margin: 0;
+  padding: 0;
 }
