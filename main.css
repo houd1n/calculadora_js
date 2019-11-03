@@ -21,21 +21,20 @@ body > h1 {
 .visors {
   justify-content: center;
   margin: 10px auto;
-  width: 8cm;
+  max-width: 300px;
+  min-width: 300px;
 }
 
 .visorUp {
   border: 1px solid black;
   margin: 5px auto;
   padding: 5px;
-  width: 100%;
 }
 
 .visorDown {
   border: 1px solid black;
   margin: 5px auto;
   padding: 5px;
-  width: 100%;
 }
 
 .btn-light, .btn-dark{
