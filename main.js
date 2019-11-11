@@ -1,21 +1,16 @@
 // Function to get all the buttons that correspond to numbers.
 function numberButtons() {
-
     // Get all the buttons inside the page.
     let buttons = document.querySelectorAll('button');
-    
     // Get the the visor
     let lowerVisor = document.querySelector(".lowerVisor");
-    
+
     for (let i=0, l=buttons.length; i<l; i++) {
-        
         /* Use isNaN to verify if the text content of the button is not a number, and negate that 
         so I only get the numbers. */
         if (!isNaN(buttons[i].firstChild.nodeValue)) {
-
             // Event listener that adds to the visor the number pressed.
             buttons[i].addEventListener("click", () => {
-               
                 // An if statement for when I'm typing all numbers but zero.
                 if(buttons[i].firstChild.nodeValue != 0) {
                     
@@ -36,7 +31,6 @@ function numberButtons() {
         }
     }  
 }
-
 numberButtons();
 
 // Clears lower visor.
@@ -50,7 +44,6 @@ function clearVisor() {
     });
 
 }
-
 clearVisor();
 
 // Clears all visors.
@@ -67,7 +60,6 @@ function clearAllVisors() {
     });
 
 }
-
 clearAllVisors();
 
 
